@@ -14,16 +14,6 @@
 
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +25,7 @@
     <link href="./query.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="main-container">
+    <main class="main-container">
       <!-- Rating state start -->
       <div class="notation__container">
         <div class="notation__icon-box margin-b__m">
@@ -52,28 +42,28 @@
             />
           </svg>
         </div>
-        <h3 class="notation__question-main margin-b__s">How did we do?</h3>
-        <p class="notation__question-desc margin-b__m">
+        <h1 class="notation__question-main margin-b__s">How did we do?</h1>
+        <p class="notation__question-desc">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="notation__rating-box margin-b__m">
-          <div class="notation__rating-grade-box">
+        <ul class="notation__rating-box">
+          <li class="notation__rating-grade-box">
             <p class="notation__rating-grade">1</p>
-          </div>
-          <div class="notation__rating-grade-box">
+          </li>
+          <li class="notation__rating-grade-box">
             <p class="notation__rating-grade">2</p>
-          </div>
-          <div class="notation__rating-grade-box">
+          </li>
+          <li class="notation__rating-grade-box">
             <p class="notation__rating-grade">3</p>
-          </div>
-          <div class="notation__rating-grade-box">
+          </li>
+          <li class="notation__rating-grade-box">
             <p class="notation__rating-grade">4</p>
-          </div>
-          <div class="notation__rating-grade-box">
+          </li>
+          <li class="notation__rating-grade-box">
             <p class="notation__rating-grade">5</p>
-          </div>
-        </div>
+          </li>
+        </ul>
         <button class="notation__btn">
           <p class="notation__btn-text">submit</p>
         </button>
@@ -83,7 +73,7 @@
       <!-- Thank you state start -->
 
       <div class="summary__container hidden">
-        <div class="summary__summary-box margin-b__m">
+        <div class="summary__summary-box">
           <svg
             class="summary__summary-image"
             width="162"
@@ -179,23 +169,16 @@
               />
             </g>
           </svg>
-          <!-- <p class="summary__summary-desc">You selected ... out of 5</p> -->
         </div>
-        <h3 class="summary__text-title">Thank you!</h3>
+        <h2 class="summary__text-title">Thank you!</h2>
         <p class="summary__text-desc">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
         </p>
       </div>
       <!-- Thank you state end -->
-    </section>
+    </main>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
     <script src="./script.js"></script>
   </body>
 </html>
